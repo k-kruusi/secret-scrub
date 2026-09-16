@@ -1,0 +1,31 @@
+{
+  "name": "@agentruntime/secret-scrub",
+  "version": "0.1.0",
+  "description": "Pure, dependency-free secrets redactor: scan tool output for API keys, JWTs, PEM blocks, bearer tokens, and credential assignments; replace with [REDACTED:<kind>] tokens before the model sees them. Sibling to token-funnel — scrub runs first, then compress.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "!dist/__tests__",
+    "!dist/**/*.js.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-kruusi/claude-supervisor.git",
+    "directory": "dependencies/secret-scrub"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
